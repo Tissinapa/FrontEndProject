@@ -1,0 +1,14 @@
+{
+  "name": "front-end-projekti",
+  "version": "1.0.0",
+  "description": "Frontend project responsive webpage",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
