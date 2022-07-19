@@ -6,7 +6,17 @@
 }
 @include mediaMd{
     
+    .recipes{
+        grid-template-areas: 
+        'foodImg1'
+        'tasty'
+        'food1'
+        'food2'
+        'food3';
 
+        grid-template-columns: 1fr;
+        
+    }
     
 }
 @include mediaSm{

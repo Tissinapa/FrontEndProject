@@ -101,23 +101,26 @@ body, html {
 .recipes {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'foodImag1 foodImag2 foodImag3' 'food1 food2 food3';
+  grid-template-areas: 'foodImg1 tasty tasty' 'food1 food2 food3';
   grid-template-columns: repeat(3, 1fr); }
   .recipes .food-image1 {
-    grid-area: foodImag1;
+    grid-area: foodImg1;
+    border-radius: 40%;
     margin: auto; }
-  .recipes .food-image2 {
-    grid-area: foodImag2;
-    margin: auto; }
-  .recipes .food-image3 {
-    grid-area: foodImag3;
-    margin: auto; }
+  .recipes .tasty {
+    grid-area: tasty;
+    font-size: 1.5rem; }
   .recipes .food-1 {
-    grid-area: food1;
-    font-size: 1.4rem; }
+    grid-area: food1; }
   .recipes .food-2 {
-    grid-area: food2;
-    font-size: 1.4rem; }
+    grid-area: food2; }
   .recipes .food-3 {
-    grid-area: food3;
-    font-size: 1.4rem; }
+    grid-area: food3; }
+  .recipes .food {
+    background: #71e8ec;
+    padding: 0.4rem; }
+
+@media screen and (max-width: 768px) {
+  .recipes {
+    grid-template-areas: 'foodImg1' 'tasty' 'food1' 'food2' 'food3';
+    grid-template-columns: 1fr; } }

@@ -80,35 +80,36 @@ body, html {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 
-  'foodImag1 foodImag2 foodImag3'
+  'foodImg1 tasty tasty'
   'food1 food2 food3';
   grid-template-columns: repeat(3, 1fr);
 
   .food-image1{
-    grid-area: foodImag1;
+    grid-area: foodImg1;
+    border-radius: 40%;
     margin: auto;
   }
-  .food-image2{
-    grid-area: foodImag2;
-    margin: auto;
-
+  .tasty{
+    grid-area: tasty;
+    font-size: 1.5rem;
   }
-  .food-image3{
-    grid-area: foodImag3;
-    margin: auto;
-  }
-
   .food-1{
     grid-area: food1;
-    font-size: 1.4rem;
+   
   }
   .food-2{
     grid-area: food2;
-    font-size: 1.4rem;
+    
   }
   .food-3{
     grid-area: food3;
-    font-size: 1.4rem;
+    
+  }
+  .food{
+    background: lighten(rgb(90, 228, 233), 5);
+    padding: 0.4rem;
+    
+
   }
 }
 
