@@ -78,20 +78,16 @@ body, html {
 //Recipe
 .recipes{
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 15px;
   grid-template-areas: 
-  'foodImg1 tasty tasty'
+  'tasty tasty tasty'
   'food1 food2 food3';
   grid-template-columns: repeat(3, 1fr);
 
-  .food-image1{
-    grid-area: foodImg1;
-    border-radius: 40%;
-    margin: auto;
-  }
   .tasty{
     grid-area: tasty;
     font-size: 1.5rem;
+    text-align: center;
   }
   .food-1{
     grid-area: food1;
@@ -106,7 +102,7 @@ body, html {
     
   }
   .food{
-    background: lighten(rgb(90, 228, 233), 5);
+    background: lighten(rgb(90, 228, 233), 4);
     padding: 0.4rem;
     
 

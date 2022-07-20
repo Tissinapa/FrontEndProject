@@ -100,16 +100,13 @@ body, html {
 
 .recipes {
   display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'foodImg1 tasty tasty' 'food1 food2 food3';
+  grid-gap: 15px;
+  grid-template-areas: 'tasty tasty tasty' 'food1 food2 food3';
   grid-template-columns: repeat(3, 1fr); }
-  .recipes .food-image1 {
-    grid-area: foodImg1;
-    border-radius: 40%;
-    margin: auto; }
   .recipes .tasty {
     grid-area: tasty;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: center; }
   .recipes .food-1 {
     grid-area: food1; }
   .recipes .food-2 {
@@ -117,10 +114,14 @@ body, html {
   .recipes .food-3 {
     grid-area: food3; }
   .recipes .food {
-    background: #71e8ec;
+    background: #6ce7eb;
     padding: 0.4rem; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 801px) and (max-width: 1170px) {
+  grid-template-areas: "tasty" "tasty" "food1" "food2" "food3";
+  grid-template-columns: repeat(3, 1fr); }
+
+@media screen and (max-width: 800px) {
   .recipes {
-    grid-template-areas: 'foodImg1' 'tasty' 'food1' 'food2' 'food3';
+    grid-template-areas: 'tasty' 'food1' 'food2' 'food3';
     grid-template-columns: 1fr; } }
