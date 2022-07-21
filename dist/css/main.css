@@ -35,6 +35,9 @@ nav.sticky {
 nav.sticky ul {
   width: 100%; }
 
+* {
+  box-sizing: border-box; }
+
 body, html {
   height: 100%;
   margin: 0;
@@ -126,6 +129,18 @@ h3 {
   .recipes .food {
     background: #6ce7eb;
     padding: 0.4rem; }
+
+.luresMain .luresHeader {
+  text-align: center;
+  padding: 20px; }
+
+.luresMain .lures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #666;
+  padding: 0.2rem; }
 
 @media screen and (min-width: 1171px) {
   .recipes {
