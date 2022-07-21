@@ -98,14 +98,24 @@ body, html {
 .ptext, .border.trans {
   background-color: transparent; }
 
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h3.lg-heading {
+    font-size: 6rem; }
+  h3.sm-heading {
+    font-size: 2rem;
+    padding: 0.2rem 1rem;
+    background: #6ce7eb; }
+
 .recipes {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 20px;
   grid-template-areas: 'tasty tasty tasty' 'food1 food2 food3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(2, 1fr); }
   .recipes .tasty {
     grid-area: tasty;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center; }
   .recipes .food-1 {
     grid-area: food1; }
@@ -117,9 +127,15 @@ body, html {
     background: #6ce7eb;
     padding: 0.4rem; }
 
+@media screen and (min-width: 1171px) {
+  .recipes {
+    grid-template-areas: 'tasty tasty tasty' 'food1 food2 food3';
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (min-width: 801px) and (max-width: 1170px) {
-  grid-template-areas: "tasty" "tasty" "food1" "food2" "food3";
-  grid-template-columns: repeat(3, 1fr); }
+  .recipes {
+    grid-template-areas: 'tasty tasty' 'food1 food2' 'food3 .';
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 800px) {
   .recipes {

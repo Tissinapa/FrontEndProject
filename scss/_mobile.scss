@@ -1,16 +1,24 @@
 @include mediaXl{
-
+    .recipes{
+        grid-template-areas: 
+        'tasty tasty tasty'
+        'food1 food2 food3' 
+        ;
+        grid-template-columns: repeat(3,1fr);
+    }
         
     
  
 }
 @include mediaLg{
-    grid-template-areas: 
-    'tasty''tasty'
-    'food1''food2'
-    'food3';
-    grid-template-columns: repeat(3,1fr);
-        
+    .recipes{
+        grid-template-areas: 
+        'tasty tasty'
+        'food1 food2'
+        'food3 .'
+        ;
+        grid-template-columns: repeat(2,1fr);
+    }
     
 }
 
