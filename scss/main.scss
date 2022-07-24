@@ -135,10 +135,11 @@ h3{
   .lures{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #666;
-    padding: 0.2rem;
+    padding: 0.4rem;
+    gap: 10px 20px;
   }
 }
 

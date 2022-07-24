@@ -137,10 +137,11 @@ h3 {
 .luresMain .lures {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #666;
-  padding: 0.2rem; }
+  padding: 0.4rem;
+  gap: 10px 20px; }
 
 @media screen and (min-width: 1171px) {
   .recipes {
@@ -153,6 +154,11 @@ h3 {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 800px) {
+  .recipes {
+    grid-template-areas: 'tasty' 'food1' 'food2' 'food3';
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
   .recipes {
     grid-template-areas: 'tasty' 'food1' 'food2' 'food3';
     grid-template-columns: 1fr; } }
